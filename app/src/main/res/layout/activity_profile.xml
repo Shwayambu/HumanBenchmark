@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FF"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/defaultprofile"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitXY"
+        />
+
+    <Button
+        android:id="@+id/profile_picture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Change profile picture"
+
+        app:layout_constraintTop_toBottomOf="@id/picture"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/fastest_reaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Fastest reaction time: 0ms"
+        android:textSize="20sp"
+        android:textColor="#F0FF00"
+        android:fontFamily="sans-serif-black"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/average_reaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Average reaction time: 0ms"
+        android:textSize="20sp"
+        android:textColor="#F0FF00"
+        android:fontFamily="sans-serif-black"
+
+        app:layout_constraintTop_toBottomOf="@id/fastest_reaction"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/most_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Top number memory level: 0"
+        android:textSize="20sp"
+        android:textColor="#F0FF00"
+        android:fontFamily="sans-serif-black"
+
+        app:layout_constraintTop_toBottomOf="@id/average_reaction"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/average_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Average number memory level: 0"
+        android:textSize="20sp"
+        android:textColor="#F0FF00"
+        android:fontFamily="sans-serif-black"
+
+        app:layout_constraintTop_toBottomOf="@id/most_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/most_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Top word memory level: 0"
+        android:textSize="20sp"
+        android:textColor="#F0FF00"
+        android:fontFamily="sans-serif-black"
+
+        app:layout_constraintTop_toBottomOf="@id/average_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/average_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Average word memory level: 0"
+        android:textSize="20sp"
+        android:textColor="#F0FF00"
+        android:fontFamily="sans-serif-black"
+
+        app:layout_constraintTop_toBottomOf="@id/most_words"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
